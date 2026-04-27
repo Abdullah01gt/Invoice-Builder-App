@@ -69,8 +69,8 @@ return(<div className="pb-50">
     </div>
     <div className="flex flex-col gap-[10px]">
    {invoiceArr.length > 0? <PdfRender data={invoice}/>:
-   <button className="bg-gray-300 w-[130px] cursor-not-allowed p-2 rounded-md ">Download Invoice</button>}
-   <button className="bg-red-500 w-[130px] cursor-pointer p-2 rounded-md text-white" onClick={props.deleteUser}>New Invoice</button>
+   <button className="bg-gray-300 w-[130px] cursor-not-allowed p-2 rounded-lg ">Download Invoice</button>}
+   <button className="bg-red-500 w-[130px] hover:bg-red-700  cursor-pointer p-2 rounded-lg text-white" onClick={props.deleteUser}>New Invoice</button>
       </div>
   </div>
  

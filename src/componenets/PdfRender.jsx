@@ -64,7 +64,7 @@ const InvoiceDocument = ({ data }) => {
     0
   );
 
-  const tax = subtotal*0.16
+  const tax = Math.floor(subtotal*0.16)
   const total = subtotal + tax;
 
   return (
