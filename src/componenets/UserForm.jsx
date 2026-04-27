@@ -49,19 +49,19 @@ export default function UserForm(props){
     return(
         <div className="h-[70vh]">
             <div className="flex flex-col justify-center items-center h-full gap-[10px] ">
-                <div><label>User Name: </label><input type="text" placeholder="Enter your value" className="block w-[350px] px-3 py-2 border border-gray-300 rounded-md 
+                <div><label className="font-semibold">Customer Name: </label><input type="text" placeholder="Enter customer's name" className="block w-[350px] px-3 py-2 border border-gray-300 rounded-md 
                   text-gray-900 placeholder-gray-500 
                   focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 
                   sm:text-sm"  onChange={updateUserName} type="text"  value={userName}></input></div>
-                <div><label>Address:</label> <input type="text" placeholder="Enter your value" className="block w-[350px] px-3 py-2 border border-gray-300 rounded-md 
+                <div><label className="font-semibold">Address:</label> <input type="text" placeholder="Enter customer's address" className="block w-[350px] px-3 py-2 border border-gray-300 rounded-md 
                   text-gray-900 placeholder-gray-500 
                   focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 
                   sm:text-sm"  onChange={updateUserAddress} type="text"  value={userAddress}></input></div>
-                <div><label>Invoice Number:</label>  <input type="text" placeholder="Enter your value" className="block w-[350px] px-3 py-2 border border-gray-300 rounded-md 
+                <div><label className="font-semibold">Invoice Number:</label>  <input type="text" placeholder="Enter invoice number" className="block w-[350px] px-3 py-2 border border-gray-300 rounded-md 
                   text-gray-900 placeholder-gray-500 
                   focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 
                   sm:text-sm"  onChange={updateInvoiceNumber} type="number"  value={invoiceNumber}></input></div>
-                <div><label>Invoice Date:</label>  <input  placeholder="Enter your value" className="block w-[350px] px-3 py-2 border border-gray-300 rounded-md 
+                <div><label className="font-semibold">Invoice Date:</label>  <input  placeholder="Enter Invoice number" className="block w-[350px] px-3 py-2 border border-gray-300 rounded-md 
                   text-gray-900 placeholder-gray-500 
                   focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 
                   sm:text-sm"  onChange={updateDate} type="date"  value={invoiceDate}></input></div>

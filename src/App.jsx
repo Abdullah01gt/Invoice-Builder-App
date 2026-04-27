@@ -60,7 +60,7 @@ function App() {
    <div>
     <div>
     <header className="h-[100px]">
-       <h2 className="text-3xl font-bold font-[System_Ui] text-center p-[30px]">Invoice builder App</h2>
+       <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-3xl text-center p-[30px]">Invoice builder App</h2>
      </header>
      <div>
       {user.newUser?<div>

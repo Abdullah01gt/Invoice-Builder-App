@@ -19,9 +19,7 @@ function updateItemQty(event){
 function updateUnitPrice(event){
     setUnitPrice(event.target.value)
 }
-function updateTotalPrice(){
-    
-}
+
 
 function resetValues(){
      setItemName("")
@@ -55,15 +53,15 @@ function resetValues(){
 
 return(<div className="h-[50vh]">
     <div className="flex flex-col justify-center items-center h-full gap-[10px] "> 
-    <div>Item Name:  <input type="text" placeholder="Enter your value" className="block w-[350px] px-3 py-2 border border-gray-300 rounded-md 
+    <div><label className="font-semibold">Item Name:</label>  <input type="text" placeholder="Enter item's name" className="block w-[350px] px-3 py-2 border border-gray-300 rounded-md 
                   text-gray-900 placeholder-gray-500 
                   focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 
                   sm:text-sm"  onChange={updateItemName} type="text"  value={itemName}></input></div>
-    <div>Item Quantity: <input type="text" placeholder="Enter your value" className="block w-[350px] px-3 py-2 border border-gray-300 rounded-md 
+    <div><label className="font-semibold">Item Quantity:</label> <input type="text" placeholder="Enter item's quantity" className="block w-[350px] px-3 py-2 border border-gray-300 rounded-md 
                   text-gray-900 placeholder-gray-500 
                   focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 
                   sm:text-sm"  onChange={updateItemQty} type="number" value={itemQty}></input></div>
-    <div>Unit Price:  <input type="text" placeholder="Enter your value" className="block w-[350px] px-3 py-2 border border-gray-300 rounded-md 
+    <div><label className="font-semibold">Unit Price:</label>  <input type="text" placeholder="Enter unit price" className="block w-[350px] px-3 py-2 border border-gray-300 rounded-md 
                   text-gray-900 placeholder-gray-500 
                   focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 
                   sm:text-sm "  onChange={updateUnitPrice} type="number" value={unitPrice}></input></div>
@@ -73,7 +71,7 @@ return(<div className="h-[50vh]">
 
       <button className="bg-sky-500 hover:bg-sky-700 text-white w-[100px] rounded-lg p-2 cursor-pointer disabled:bg-gray-300 
       disabled:cursor-not-allowed w-[350px]"
-    onClick={handleSubmit} disabled={!valuesAvailable}  id="invoice-submit">Add Invoice</button>
+    onClick={handleSubmit} disabled={!valuesAvailable}  id="invoice-submit">Add Item</button>
 
     </div>
 </div>)
